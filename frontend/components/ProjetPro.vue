@@ -69,8 +69,8 @@ h2{
 /* Titre partie */
 
 h3{
-  font-size: 23px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -81,7 +81,6 @@ div.partie{
   justify-content: space-between;
   gap: 100px;
   font-size: 16px;
-  margin-bottom: 30px;
 }
 
 div.partie a{
@@ -110,18 +109,90 @@ div.texte{
  margin-top: 80px;
  text-align: justify;
  font-size: 14px;
+ font-weight: 300;
  color: #FFFAFA;
 }
 
 .computer{
-  max-width: 350px;
+  max-width: 300px;
 }
 .ai{
-  max-width: 350px;
+  max-width: 300px;
 }
 .winning{
 
-  max-width: 350px;
+  max-width: 300px;
 }
+
+@media(max-width: 992px){
+  section{
+    padding-bottom: 0px;
+  }
+  .computer{
+  min-width: 250px;
+  position: relative;
+}
+.ai{
+  min-width: 250px;
+  position: relative;
+}
+.winning{
+  min-width: 250px;
+  position: relative;
+}
+
+h3{
+  font-size: 18px;
+}
+
+div.texte{
+  font-size: 14px;
+ margin-top: 0px;
+ margin-bottom: 100px;
+
+
+}
+
+div.partie{
+  gap: 50px;
+
+  
+}
+}
+
+@media(max-width: 768px){
+  div.partie{
+  flex-direction: column;
+}
+.computer{
+  display: none;
+}
+.ai{
+  display: none;
+}
+.winning{
+  display: none;
+}
+div.texte{
+ margin-top: 0px;
+ margin-bottom: 100px;
+
+}
+div.partie{
+  gap: 0px;
+}
+section{
+  padding-bottom: 0px;
+}
+
+div.partie-1, div.partie-3 .texte{
+  margin-right: 0px;
+}
+div.partie-2 .texte{
+  margin-left: 0px;
+}
+}
+
+
 
 </style>

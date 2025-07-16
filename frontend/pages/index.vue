@@ -5,4 +5,5 @@
 <ProjetPro></ProjetPro>
 <Parcours></Parcours>
 <Projets></Projets>
+<Contact></Contact>
 </template>

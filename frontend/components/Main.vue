@@ -11,7 +11,7 @@
             <h3>Développeuse Data Intelligence Artificielle</h3>
             <DecoLine/>
         </div>
-        <p>Bonjour et bienvenue sur mon portofolio ! <br><br>Passionnée par la data et  l'intelligence artificielle, je mets mes compétences au service de projets innovants et ambitieux. Ici, vous découvrirez ma vision de l'IA, mon parcours et mes projets. <br><br>N'hésitez pas à me contacter pour échanger !</p>
+        <p>Bonjour et bienvenue sur mon portofolio ! <br>Passionnée par la data et  l'intelligence artificielle, je mets mes compétences au service de projets innovants et ambitieux. Ici, vous découvrirez ma vision de l'IA, mon parcours et mes projets. <br>N'hésitez pas à me contacter pour échanger !</p>
         <!-- Boutons mise en contact -->
         <div class="buttons">
             <button class="curriculum"><a :href="cv" download>Mon CV</a></button>
@@ -123,6 +123,8 @@ div.presentation p{
     padding: 10px;
     border-radius: 0px;
     font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
 }
 
 /* Boutons */
@@ -160,6 +162,22 @@ img.montagnes{
     z-index: 2;
     /* top:160px; */
     width: 100%;
+}
+
+@media (max-width: 992px){
+div.lune img{
+    display: none;
+}
+
+div.presentation p{
+    width: 100%;
+}
+
+div.presentation{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 }
 
 </style>

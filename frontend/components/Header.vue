@@ -16,7 +16,7 @@
                 <li>Projets</li>
             </ul>
             <!-- Choix de la langue -->
-            <div class="language__choice" title="Changer la Langue" @click="language = !language">
+            <div v-if="false" class="language__choice" title="Changer la Langue" @click="language = !language">
                 <Icon name="flag:bl-4x3" v-if="!language" />
                 <Icon name="flag:sh-4x3" v-if="language" />
             </div>
@@ -59,6 +59,7 @@ header {
 .portofolio__logo h1{
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 /* All the nav entities */
@@ -100,6 +101,12 @@ button {
     cursor: pointer;
     position: relative;
     bottom: -5px;
+}
+
+@media (max-width: 768px){
+nav{
+    display: none;
+}
 }
 </style>
 

@@ -143,6 +143,7 @@ h2{
 .formations-et-titre h4, .experiences-et-titre h4{
     font-size: 14px;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 
@@ -156,7 +157,7 @@ h2{
 
 .formation p, .experience p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     
 }
 
@@ -182,7 +183,8 @@ h2{
 }
 .informations-part p{
     font-size: 14px;
-    
+    font-weight: 300;
+    text-align: justify;
 }
 
 .informations-part a{
