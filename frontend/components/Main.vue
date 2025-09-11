@@ -1,5 +1,5 @@
 <template>
-<section>
+<section id="acceuil">
 <div class="particles">
     <ParticlesBackgound  class="particles"/>
 </div>
@@ -8,7 +8,7 @@
     <div class="presentation">
         <div class="titles">
             <h2>Promise JOHN</h2>
-            <h3>Développeuse Data Intelligence Artificielle</h3>
+            <h3>Développeuse Data & Intelligence Artificielle</h3>
             <DecoLine/>
         </div>
         <p>Bonjour et bienvenue sur mon portofolio ! <br>Passionnée par la data et  l'intelligence artificielle, je mets mes compétences au service de projets innovants et ambitieux. Ici, vous découvrirez ma vision de l'IA, mon parcours et mes projets. <br>N'hésitez pas à me contacter pour échanger !</p>

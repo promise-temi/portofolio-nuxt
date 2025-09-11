@@ -1,5 +1,5 @@
 <template>
-    <section id="parcours-section">
+    <section id="parcours">
         <div class="title">
             <h2>Parcours </h2>
             <DecoLine/>

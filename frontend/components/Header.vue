@@ -10,10 +10,10 @@
         <nav>
             <!-- Liste de navigation -->
             <ul class="nav__links">
-                <li>Acceuil</li>
-                <li>Projet Pro</li>
-                <li>Parcours</li>
-                <li>Projets</li>
+                <li><a href="#acceuil">Acceuil</a></li>
+                <li><a href="#motivations">Motivations</a></li>
+                <li ><a href="#parcours">Parcours</a></li>
+                <!-- <li><a href="#projets">Projets</a></li> -->
             </ul>
             <!-- Choix de la langue -->
             <div v-if="false" class="language__choice" title="Changer la Langue" @click="language = !language">
@@ -21,7 +21,7 @@
                 <Icon name="flag:sh-4x3" v-if="language" />
             </div>
             <!-- Bouton de contact -->
-            <button>Contact</button>
+            <button onclick="window.location.href ='#contact'">Contact</button>
         </nav>
     </header>
     

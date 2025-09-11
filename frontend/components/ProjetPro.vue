@@ -1,8 +1,8 @@
 <template>
-    <section id="projet__pro__section">
+    <section id="motivations">
         <!-- Titre section -->
         <div class="title">
-            <h2>Projet pro</h2>
+            <h2>Motivations</h2>
             <DecoLine />
         </div>
         <!-- Partie 1 AI -->

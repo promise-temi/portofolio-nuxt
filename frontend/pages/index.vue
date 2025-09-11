@@ -4,6 +4,6 @@
 <Main></Main>
 <ProjetPro></ProjetPro>
 <Parcours></Parcours>
-<Projets></Projets>
+<!-- <Projets></Projets> -->
 <Contact></Contact>
 </template>

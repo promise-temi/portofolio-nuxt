@@ -1,5 +1,5 @@
 <template>
-    <Section>
+    <Section id="projets">
             <div class="title">
                 <h2>Projets</h2>
                 <DecoLine/>

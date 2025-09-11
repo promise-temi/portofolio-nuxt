@@ -2,7 +2,6 @@
 
   <div>
     <NuxtRouteAnnouncer />
-    <!-- <NuxtWelcome /> -->
     <NuxtPage />
     
   </div>
@@ -26,5 +25,10 @@
 }
 html {
     scroll-behavior: smooth; /* Permet le scroll smooth */
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
   }
 </style>
