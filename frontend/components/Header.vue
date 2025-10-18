@@ -7,7 +7,7 @@
             <DecoLine />
         </div>
         <!-- Navigation -->
-        <nav>
+        <nav class="desktop">
             <!-- Liste de navigation -->
             <ul class="nav__links">
                 <li><a href="#acceuil">Acceuil</a></li>
@@ -23,6 +23,7 @@
             <!-- Bouton de contact -->
             <button onclick="window.location.href ='#contact'">Contact</button>
         </nav>
+        
     </header>
     
 </template>
@@ -104,7 +105,7 @@ button {
 }
 
 @media (max-width: 768px){
-nav{
+header{
     display: none;
 }
 }

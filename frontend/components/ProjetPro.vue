@@ -12,7 +12,7 @@
             </div>
             <div class="texte">
                 <h3>L’IA : plus qu’une avancée, une véritable révolution</h3>
-                <p>Au-delà d’une simple prouesse technologique, l’intelligence artificielle (IA) constitue une révolution qui propulse les entreprises vers de nouveaux sommets. Elle permet notamment de :</p>
+                <p>Au-delà d’une simple prouesse technologique, l’intelligence artificielle (IA) constitue une révolution qui redéfinit nos capacités. Elle permet notamment de :</p>
                 <ul>
                     <li>Automatiser et optimiser des processus complexes,</li>
                     <li>Analyser d’immenses volumes de données pour anticiper les tendances,</li>
@@ -24,7 +24,7 @@
         <div class="partie partie-2">
             <div class="texte">
                 <h3>Ma formation au service de l’innovation</h3>
-                <p>C’est précisément dans cet univers que je me spécialise actuellement, grâce à ma formation de <a href="https://gretaformation.ac-orleans-tours.fr/formation/developpeurse-en-intelligence-artificielle-ia" target="_blank">Développeur en Intelligence Artificielle</a> au GRETA. Un métier à la croisée des compétences, qui combine :</p>
+                <p>C’est précisément dans cet univers que je me spécialise actuellement. Je batis un profil à la croisée des compétences, qui combine :</p>
                 <ul>
                     <li><strong>La science des données</strong> : collecte, nettoyage et exploitation de vastes bases de données.</li>
                     <li><strong>L’intelligence artificielle</strong> : conception de modèles de Machine Learning et Deep Learning pour résoudre des problématiques complexes.</li>

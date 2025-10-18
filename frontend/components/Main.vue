@@ -129,6 +129,9 @@ div.presentation p{
 
 /* Boutons */
 
+
+
+
 button{
      width: 100px;
     height: 35px;
@@ -137,6 +140,7 @@ button{
     color: white;
     font-weight: 600;
     margin-right: 25px;
+    
     font-size: 14px;
     cursor: pointer;
 }
@@ -178,6 +182,23 @@ div.presentation{
     margin-right: 50px;
 }
 
+section{
+    height: 600px;
+}
+
+.particles {
+    height: 100vw;
+}
+
+}
+
+
+@media (max-width:480px) {
+ div.presentation{
+    
+    margin-top: 80px;
+    
+}   
 }
 
 </style>
