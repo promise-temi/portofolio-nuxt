@@ -108,6 +108,7 @@ section{
     z-index: 5;
     color: white;
     padding: 50px;
+    display: none;
 
 }
 .title{
@@ -241,6 +242,13 @@ div.experiences-et-titre{
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+@media (max-width:850px){
+
+section{
+    display: block;
+}
 }
 
 </style>
