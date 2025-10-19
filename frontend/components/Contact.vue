@@ -16,7 +16,7 @@
                     </strong>
                 </p>
             </div>
-            <form>
+            <form @submit.prevent="sendMessage">
                 <div class="fullname">
                     <fieldset>
                         <label for="prenom">Prénom</label>
@@ -38,7 +38,7 @@
 
                 <!-- CAPTCHA dynamique -->
                 <fieldset>
-                    <label for="captcha">Résolvez ce CAPTCHA : 1+1</label>
+                    <label for="captcha">Résolvez ce CAPTCHA : {{x}} {{ signe }}  {{ y }}</label>
                     <input type="text" id="captcha"  required>
                 </fieldset>
 
@@ -52,6 +52,81 @@
         </div>
     </section>
 </template>
+
+<script>
+import axios from 'axios';
+export default{
+    data(){
+        return{
+            challenge : null,
+            x : null,
+            y : null,
+        }
+    },
+    methods:{
+        escapeHTML(str) {
+            return String(str).replace(/[&<>"'`]/g, s => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;',
+                '`': '&#96;'
+            }[s]));
+            },
+
+        sendMessage(){
+            let captcha =  this.escapeHTML(document.querySelector('#captcha').value);
+
+            let data = {
+                'prenom': this.escapeHTML(document.querySelector('#prenom').value),
+                'nom': this.escapeHTML(document.querySelector('#nom').value),
+                'email': this.escapeHTML(document.querySelector('#email').value),
+                'message': this.escapeHTML(document.querySelector('#message').value),
+            }
+
+            if(captcha == this.challenge){
+                axios.post('http://127.0.0.1:5000/api/send_message', data)
+                .then(response => {
+                    console.log(response.data)
+                })
+                .catch(error => {
+                    alert('something went wrong');
+                    console.log(error)
+                })
+            }
+            else{
+                alert('wrong captcha')
+            }
+            this.Capcha()
+        },
+        Capcha(){
+            let signe = Math.floor(1 + Math.random()*2);
+            
+            this.x = Math.floor(1 + Math.random()*9);
+            this.y = Math.floor(1 + Math.random()*9);
+            if(signe === 0){
+                this.signe = '+'
+              this.challenge = this.x + this.y   
+            }
+            if(signe === 1){
+                this.signe = '-'
+              this.challenge = this.x - this.y   
+            }
+            if(signe === 2){
+                this.signe = '*'
+              this.challenge = this.x * this.y   
+            }
+            
+        }
+
+    },
+    mounted(){
+        this.Capcha();
+    }
+}
+
+</script>
 <style>
 .confirmation-message {
     margin-top: 20px;
@@ -125,6 +200,10 @@ input, textarea{
     width: 100%;
     padding: 10px;
     font-size: 12px;
+}
+
+textarea{
+    height: 100px;
 }
 input{
     height: 35px;

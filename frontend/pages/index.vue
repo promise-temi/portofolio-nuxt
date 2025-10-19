@@ -14,4 +14,16 @@
 body{
     min-width: 350px;
 }
+
+input:focus{
+    outline: none;
+  box-shadow: none;
+  border-color: inherit; 
+}
+
+textarea:focus{
+    outline: none;
+  box-shadow: none;
+  border-color: inherit; 
+}
 </style>
