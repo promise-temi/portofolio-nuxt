@@ -8,3 +8,8 @@
 <!-- <Projets></Projets> -->
 <Contact></Contact>
 </template>
+<style>
+body{
+    min-width: 350px;
+}
+</style>

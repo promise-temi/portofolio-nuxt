@@ -207,4 +207,11 @@ h2{
   opacity: 0;
 }
 /* end animation */
+
+
+@media (max-width:1000px) {
+    section#parcours{
+        display: none;
+    }
+}
 </style>

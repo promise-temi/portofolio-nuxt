@@ -187,7 +187,7 @@ section{
 }
 
 .particles {
-    height: 100vw;
+    height: 80vH;
 }
 
 }
