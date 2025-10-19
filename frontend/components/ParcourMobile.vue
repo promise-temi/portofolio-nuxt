@@ -8,38 +8,36 @@
             <div class="elements">
                 <div class="formations-et-titre">
                     <h4>  <!-- <span>🎓</span> -->Formations </h4> 
-                    <div class="formations" v-for="(formation, index) in formations" :key="index" @click="selected=formations[index]" >
+                    <div class="formations" v-for="(formation, index) in formations" :key="index" @click="toggleExperience(index)">
                         <div class="formation">
-                            <p>{{formation.title}} <span v-if="selected === formations[index]">✨</span></p>
+                            <p>{{formation.title}} </p>
                             <span>{{formation.institution}} | Tours 37100</span>
                             <h6>{{formation.duration}}</h6>
+                            <div class="informations-part" v-show="activeIndex === index">
+                                <DecoLine/>
+                                <p>{{formation.description}}</p>
+                            </div>
                         </div>
                         
                     </div>
                 </div>
                 <div class="experiences-et-titre">
                     <h4 >  <!-- <span>💼</span>  -->Experiences   </h4>
-                    <div class="experiences" v-for="(experience, index) in experiences" :key="index" @click="selected=experiences[index]" >
+                    <div class="experiences" v-for="(experience, index) in experiences" :key="index" @click="toggleExperience(index)">
                         <div class="experience" >
-                            <p>{{experience.title}} <span v-if="selected === experiences[index]">✨</span></p>
+                            <p>{{experience.title}}</p>
                             <span>{{ experience.institution }}</span>
                             <h6>{{experience.duration}}</h6>
+                            <div class="informations-part" v-show="activeIndex === index">
+                                <DecoLine/>
+                                <p>{{experience.description}}</p>
+                            </div>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <Transition name="fade" mode="out-in">
-            <div class="informations-part" :key="number">
-                <div class="title">
-                    <h4>{{selected.title}}</h4>  
-                    <h6><a :href="selected.link" target="_blank" title="En savoir plus">{{selected.institution}}</a>  |  Tours 37100</h6>
-                    <h6>{{selected.duration}}</h6>
-                    <DecoLine/>
-                </div>
-                <p>{{selected.description}}</p>
-            </div>
-            </Transition>
+            
         </div>
     </section>
 </template>
@@ -49,7 +47,7 @@ export default{
         return {
             showFormations: true,
             showExperiences: false,
-            
+            activeIndex: null,
             formations: [
                 // Formations
                 {
@@ -84,31 +82,13 @@ export default{
                     description: "Expérience en développement web fullstack, travaillant sur divers projets pour améliorer les compétences techniques.",
                     link: "https://www.sinad-emploi.fr/",
                 }
-            ],
-            selected: null
+            ]
         }
-        
-        
     },
-    created(){
-        
-            this.selected = this.formations[0]
-        },
     methods:{
-        sshowFormation(){
-            if(window.innerWidth > 850){ 
-                this.showFormations = !this.showFormations;
-                this.showExperiences = false
-
-            }
-        },
-
-        sshowExperience(){
-            if(window.innerWidth > 850){ 
-                this.showExperiences = !this.showExperiences;
-                this.showFormations = false
-            }
-        }
+        toggleExperience(index) {
+      this.activeIndex = this.activeIndex === index ? null : index
+    }
     }
 
 }
@@ -153,21 +133,23 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 100%;
 }
 
 div.formations-et-titre{
-    width: 500px;
+    width: 100%;
 }
 
 div.experiences-et-titre{
-    width: 500px;
+    width: 100%;
 }
 
 .formations, .experiences{
     display: flex;
     flex-direction: column;
-    width: 500px;
-    min-width: 450px;
+    
+    width: 100%;
+    min-width: 350px;
     
     cursor: pointer;
 }
@@ -207,9 +189,13 @@ div.experiences-et-titre{
 }
 
 .informations-part{
-    width: 650px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding-right: 20px;
+    position: relative;
+    bottom: -15px;
+    padding-bottom: 20px;
 }
 
 .informations-part .title h4{
@@ -248,57 +234,8 @@ div.experiences-et-titre{
 /* end animation */
 
 .formation, .experience{
-    margin-bottom: 10px;
-}
-@media (max-width:1000px) {
-    /* section#parcours{
-        display: none;
-    } */
-
-    div.formations-et-titre{
-    width: 400px;
+    margin-bottom: 15px;
 }
 
-div.experiences-et-titre{
-    width: 400px;
-}
 
-.formations, .experiences{
-    width: 400px;
-    min-width: 350px;
-}
-}
-
-@media (max-width:850px){
-div.informations-part{
-    display: none;
-}
-
-section{
-    display: none;
-}
-/* 
-div.formations-et-titre{
-    width: 100%;
-}
-
-div.experiences-et-titre{
-    width: 100%;
-}
-
-.formations, .experiences{
-    width: 100%;
-    min-width: auto;
-}
-div.elements{
-    width: 100%;
-}
-
-h4 svg {
-    display: none;
-} */
-
-
-
-}
 </style>
