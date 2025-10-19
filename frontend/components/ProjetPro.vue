@@ -193,6 +193,11 @@ div.partie-2 .texte{
 }
 }
 
-
+@media (max-width:450px){
+    section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 </style>

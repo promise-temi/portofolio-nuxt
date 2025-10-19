@@ -197,8 +197,9 @@ section{
  div.presentation{
     
     margin-top: 80px;
-    
-}   
+    margin-left: 20px;
+    margin-right: 20px;
+} 
 }
 
 </style>

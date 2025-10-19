@@ -8,12 +8,12 @@
             <div class="elements">
                 <div class="formations-et-titre">
                     <h4>  <!-- <span>🎓</span> -->Formations </h4> 
-                    <div class="formations" v-for="(formation, index) in formations" :key="index" @click="toggleExperience(index)">
+                    <div class="formations" v-for="(formation, index) in formations" :key="index" @click="selected == formations[index] ? selected = null : selected = formations[index]">
                         <div class="formation">
                             <p>{{formation.title}} </p>
                             <span>{{formation.institution}} | Tours 37100</span>
                             <h6>{{formation.duration}}</h6>
-                            <div class="informations-part" v-show="activeIndex === index">
+                            <div class="informations-part" v-show="selected == formations[index]">
                                 <DecoLine/>
                                 <p>{{formation.description}}</p>
                             </div>
@@ -23,12 +23,12 @@
                 </div>
                 <div class="experiences-et-titre">
                     <h4 >  <!-- <span>💼</span>  -->Experiences   </h4>
-                    <div class="experiences" v-for="(experience, index) in experiences" :key="index" @click="toggleExperience(index)">
+                    <div class="experiences" v-for="(experience, index) in experiences" :key="index" @click="selected == experiences[index] ? selected= null : selected = experiences[index]">
                         <div class="experience" >
                             <p>{{experience.title}}</p>
                             <span>{{ experience.institution }}</span>
                             <h6>{{experience.duration}}</h6>
-                            <div class="informations-part" v-show="activeIndex === index">
+                            <div class="informations-part" v-show="selected == experiences[index]">
                                 <DecoLine/>
                                 <p>{{experience.description}}</p>
                             </div>
@@ -63,7 +63,7 @@ export default{
                     duration: "sept.2023 - juin.2024",
                     description: "Une formation 100 % en ligne avec Studi, qui m’a permis d’acquérir des bases solides en développement web, aussi bien côté front-end que back-end. Le tout en alternance, ce qui m’a permis de mettre en pratique mes compétences au quotidien, dans un vrai contexte professionnel.En parallèle, j’ai choisi de me former sur ma propre stack, plus moderne et mieux adaptée à mes projets : Vue.js pour le front-end, et Python (Flask/FastAPI) pour le back-end.Un choix personnel qui m’a permis de gagner en autonomie, en efficacité, et en plaisir de coder.Le format à distance, avec peu d’encadrement direct, représentait un vrai défi. Il fallait être motivé, organisé et suffisamment autodidacte pour progresser.Une expérience intense, enrichissante, et profondément structurante.",
                     link: "https://www.francecompetences.fr/recherche/rncp/31114/",
-                },
+                }
             
             ],
             experiences:[
@@ -82,13 +82,12 @@ export default{
                     description: "Expérience en développement web fullstack, travaillant sur divers projets pour améliorer les compétences techniques.",
                     link: "https://www.sinad-emploi.fr/",
                 }
-            ]
+            ],
+            selected : null,
         }
     },
     methods:{
-        toggleExperience(index) {
-      this.activeIndex = this.activeIndex === index ? null : index
-    }
+        
     }
 
 }
@@ -149,7 +148,7 @@ div.experiences-et-titre{
     flex-direction: column;
     
     width: 100%;
-    min-width: 350px;
+    min-width: 300px;
     
     cursor: pointer;
 }
@@ -237,5 +236,11 @@ div.experiences-et-titre{
     margin-bottom: 15px;
 }
 
+@media (max-width:480px){
+    section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 </style>

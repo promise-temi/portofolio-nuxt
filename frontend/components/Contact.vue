@@ -45,10 +45,10 @@
                 <button type="submit" class="submit">Envoyer</button>
             </form>
 
-            <!-- Message de confirmation
-            <div v-if="messageEnvoye" class="confirmation-message">
+            <!-- Message de confirmation -->
+            <div  class="confirmation-message">
                 <p>Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.</p>
-            </div> -->
+            </div>
         </div>
     </section>
 </template>
@@ -80,8 +80,12 @@ section{
     background-color: #080111;
     padding: 50px;
     width: 100%;
+    font-size: 14px;
 }
-
+a{
+    color: blue;
+    text-decoration: underline;
+}
 .title-decor{
   display: inline-block;
   width: 100px;
@@ -93,7 +97,7 @@ section{
 }
 
 .contact-sentence{
-    max-width: 450px;
+    max-width: 550px;
     
     margin-bottom: 50px;
 
@@ -173,5 +177,12 @@ button{
     justify-content: space-between; /* Change space-between en center */
     
     gap: 10px;
+}
+
+@media (max-width:480px){
+    section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 </style>
