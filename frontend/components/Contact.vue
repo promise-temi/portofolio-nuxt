@@ -38,17 +38,18 @@
 
                 <!-- CAPTCHA dynamique -->
                 <fieldset>
-                    <label for="captcha">Résolvez ce CAPTCHA : {{x}} {{ signe }}  {{ y }}</label>
+                    <label for="captcha">Résolvez ce CAPTCHA : {{x}} {{ challenge }} {{ y }}</label>
                     <input type="text" id="captcha"  required>
                 </fieldset>
 
                 <button type="submit" class="submit">Envoyer</button>
             </form>
-
-            <!-- Message de confirmation -->
-            <div  class="confirmation-message">
-                <p>Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.</p>
-            </div>
+            <Transition name="fade" mode="out-in">
+                <!-- Message de confirmation -->
+                <div v-if="messageValidated" class="confirmation-message">
+                    <p>Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.</p>
+                </div>
+            </Transition>
         </div>
     </section>
 </template>
@@ -61,6 +62,7 @@ export default{
             challenge : null,
             x : null,
             y : null,
+            messageValidated: false,
         }
     },
     methods:{
@@ -76,54 +78,64 @@ export default{
             },
 
         sendMessage(){
-            let captcha =  this.escapeHTML(document.querySelector('#captcha').value);
+            
 
             let data = {
                 'prenom': this.escapeHTML(document.querySelector('#prenom').value),
                 'nom': this.escapeHTML(document.querySelector('#nom').value),
                 'email': this.escapeHTML(document.querySelector('#email').value),
                 'message': this.escapeHTML(document.querySelector('#message').value),
+                'captcha': this.escapeHTML(document.querySelector('#captcha').value)
             }
 
-            if(captcha == this.challenge){
+            
                 axios.post('http://127.0.0.1:5000/api/send_message', data)
                 .then(response => {
                     console.log(response.data)
+                    document.querySelector('#prenom').value = "";
+                    document.querySelector('#nom').value = "";
+                    document.querySelector('#email').value = "";
+                    document.querySelector('#message').value = "";
+                    document.querySelector('#captcha').value = "";
+                    this.getCaptcha()
+                    this.showMessage()
                 })
                 .catch(error => {
                     alert('something went wrong');
                     console.log(error)
+                    this.getCaptcha()
                 })
-            }
-            else{
-                alert('wrong captcha')
-            }
-            this.Capcha()
+            
         },
-        Capcha(){
-            let signe = Math.floor(1 + Math.random()*2);
-            
-            this.x = Math.floor(1 + Math.random()*9);
-            this.y = Math.floor(1 + Math.random()*9);
-            if(signe === 0){
-                this.signe = '+'
-              this.challenge = this.x + this.y   
-            }
-            if(signe === 1){
-                this.signe = '-'
-              this.challenge = this.x - this.y   
-            }
-            if(signe === 2){
-                this.signe = '*'
-              this.challenge = this.x * this.y   
-            }
-            
-        }
+
+    getCaptcha(){
+      axios.get('http://127.0.0.1:5000/api/captcha')
+      .then(response => {
+          console.log(response.data)
+          let result = response.data
+          this.x = result.x
+          this.y = result.y
+          this.challenge = result.sign
+      })
+      .catch(error => {
+        alert('Une erreur s\'est produite')
+        console.log(error)
+      })
+    },
+
+    showMessage(){
+        this.messageValidated = true
+        setTimeout(() => {
+            this.messageValidated = false
+        }, 5000)
+    }
+        
 
     },
     mounted(){
-        this.Capcha();
+        this.getCaptcha()
     }
+    
 }
 
 </script>
@@ -135,6 +147,10 @@ export default{
     background-image: linear-gradient(to right, #660BDA, #C014A6, 50%, #c014a600);
     border: 1px solid #000000;
     border-radius: 5px;
+    position: fixed;
+    top:50px;
+    right: 10px;
+    z-index: 1000;
 }
 </style>
 
@@ -257,6 +273,15 @@ button{
     
     gap: 10px;
 }
+
+/* animation */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease-in;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+/* end animation */
 
 @media (max-width:480px){
     section{
