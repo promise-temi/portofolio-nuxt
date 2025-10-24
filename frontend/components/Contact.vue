@@ -26,14 +26,19 @@
                         <label for="nom">Nom</label>
                         <input type="text" id="nom"  required>
                     </fieldset>
+                    
                 </div>
+                <fieldset>
+                        <label for="objet">objet</label>
+                        <input type="text" id="object" maxlength="100" required>
+                    </fieldset>
                 <fieldset>
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
                 </fieldset>
                 <fieldset>
                     <label for="message">Message</label>
-                    <textarea id="message"  required></textarea>
+                    <textarea id="message" maxlength="1000" required></textarea>
                 </fieldset>
 
                 <!-- CAPTCHA dynamique -->
@@ -83,6 +88,7 @@ export default{
             let data = {
                 'prenom': this.escapeHTML(document.querySelector('#prenom').value),
                 'nom': this.escapeHTML(document.querySelector('#nom').value),
+                'object': this.escapeHTML(document.querySelector('#object').value),
                 'email': this.escapeHTML(document.querySelector('#email').value),
                 'message': this.escapeHTML(document.querySelector('#message').value),
                 'captcha': this.escapeHTML(document.querySelector('#captcha').value)
@@ -94,6 +100,7 @@ export default{
                     console.log(response.data)
                     document.querySelector('#prenom').value = "";
                     document.querySelector('#nom').value = "";
+                    document.querySelector('#object').value = "";
                     document.querySelector('#email').value = "";
                     document.querySelector('#message').value = "";
                     document.querySelector('#captcha').value = "";
@@ -147,10 +154,6 @@ export default{
     background-image: linear-gradient(to right, #660BDA, #C014A6, 50%, #c014a600);
     border: 1px solid #000000;
     border-radius: 5px;
-    position: fixed;
-    top:50px;
-    right: 10px;
-    z-index: 1000;
 }
 </style>
 
