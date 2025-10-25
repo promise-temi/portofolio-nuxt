@@ -60,7 +60,7 @@
 </template>
 
 <script>
-const api = import.meta.env.API_BASE_URL
+const api = import.meta.env.VITE_API_BASE_URL
 import axios from 'axios';
 export default{
     data(){
