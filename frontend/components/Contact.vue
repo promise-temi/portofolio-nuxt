@@ -60,6 +60,7 @@
 </template>
 
 <script>
+const api = import.meta.env.API_BASE_URL
 import axios from 'axios';
 export default{
     data(){
@@ -95,7 +96,7 @@ export default{
             }
 
             
-                axios.post('http://127.0.0.1:5000/api/send_message', data)
+                axios.post(`${api}/send_message`, data)
                 .then(response => {
                     console.log(response.data)
                     document.querySelector('#prenom').value = "";
@@ -116,7 +117,7 @@ export default{
         },
 
     getCaptcha(){
-      axios.get('http://127.0.0.1:5000/api/captcha')
+      axios.get(`${api}/captcha`)
       .then(response => {
           console.log(response.data)
           let result = response.data
