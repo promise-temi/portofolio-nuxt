@@ -156,7 +156,7 @@ button.contact{
 div.lune img{
     width: 39vw;
     rotate: -175,45;
-    margin-top: 8vw;
+    margin-top: 9vw;
     opacity: 0.9;
 }
 
@@ -199,7 +199,21 @@ section{
     margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: start;
 } 
+}
+
+@media (min-width: 1440px){
+  div.lune img{
+    margin-top: 4vw;
+  }
+}
+@media (min-width: 1900px){
+  div.lune img{
+    display: none;
+    
+  }
+
 }
 
 </style>

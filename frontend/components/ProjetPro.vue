@@ -176,7 +176,7 @@ div.partie{
 div.texte{
  margin-top: 0px;
  margin-bottom: 100px;
-
+ text-align: start;
 }
 div.partie{
   gap: 0px;
@@ -200,4 +200,9 @@ div.partie-2 .texte{
     }
 }
 
+@media (min-width:1300px){
+  section{
+    padding: 50px 130px;
+  }
+}
 </style>

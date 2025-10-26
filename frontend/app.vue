@@ -18,13 +18,17 @@
   body {
       background-color: #10071e;
       overflow-x: hidden; /* Empêche le scroll horizontal */
-      
+      max-width: 1440px
   }
   html, body {
   overscroll-behavior: none; /* Empêche le over scroll de la page */
 }
 html {
     scroll-behavior: smooth; /* Permet le scroll smooth */
+    background-color: black;
+    display: flex;
+
+    justify-content: center;
   }
 
   a{

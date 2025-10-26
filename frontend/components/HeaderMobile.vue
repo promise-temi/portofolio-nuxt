@@ -134,6 +134,17 @@ div.humberger svg{
     top: 10px;
     cursor: pointer;
 }
+
+
+}
+@media (max-width:480px) {
+ 
+
+header {
+    
+    padding: 0 20px;
+}
+
 }
 </style>
 
