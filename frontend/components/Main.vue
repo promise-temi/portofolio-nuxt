@@ -15,7 +15,7 @@
         <!-- Boutons mise en contact -->
         <div class="buttons">
             <button class="curriculum"><a :href="cv" download>Mon CV</a></button>
-            <button class="contact"><a href="#contact-section">Contact</a></button>
+            <button class="contact"><a href="#contact">Contact</a></button>
         </div>
     </div>
     <!-- Lune décoration -->
