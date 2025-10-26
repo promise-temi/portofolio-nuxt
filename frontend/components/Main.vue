@@ -8,7 +8,7 @@
     <div class="presentation">
         <div class="titles">
             <h2>Promise JOHN</h2>
-            <h3>Data & Intelligence Artificielle Developer</h3>
+            <h3>Data & Artificial Intelligence Developer</h3>
             <DecoLine/>
         </div>
         <p>Hi, welcome to my portfolio ! <br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my background and some of my personal projects.<br>Feel free to contact me to learn more !</p>
