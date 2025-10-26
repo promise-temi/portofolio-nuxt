@@ -64,7 +64,7 @@ export default{
                     ➜ Artificial Intelligence : Training machine learning and deep learning models to solve complex problems,
                     ➜ Application Development : Integrating these solutions into concrete tools deployed in real-world environments. 
 
-                    A comprehensive program that has given me a global understanding of the AI project lifecycle, from raw data to a fully functional tool.`,
+                    🏆 A comprehensive program that has given me a global understanding of the AI project lifecycle, from raw data to a fully functional tool.`,
                     link: "https://gretaformation.ac-orleans-tours.fr/formation/developpeurse-en-intelligence-artificielle-ia",
                 },
                 {
@@ -76,7 +76,7 @@ export default{
 
                     In parallel, I chose to train myself with a more personal and modern stack adapted to my own projects: Vue, Nuxt for the front end, and Python (Flask, FastAPI, Django) for the back end. This personal choice helped me improve my efficiency and, most importantly, enjoy coding. 
 
-                    The online format, with little direct supervision, was a real challenge. It required motivation, organization, and self-discipline to keep progressing. An intense, rewarding, and deeply formative experience.`,
+                    🏆 The online format, with little direct supervision, was a real challenge. It required motivation, organization, and self-discipline to keep progressing. An intense, rewarding, and deeply formative experience.`,
                     link: "https://www.francecompetences.fr/recherche/rncp/31114/",
                 },
             
@@ -92,9 +92,9 @@ export default{
                     
                     Collaboration with mechanical engineers, R&D engineers and other specialists is key to understanding the operational context and ensuring data quality. 
                     
-                    A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
+                    🏆 A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
                     
-                    As part of my work-study program (alternance) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
+                    🗓️ As part of my work-study program (alternance) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
                     link: "https://www.wabteccorp.com/",
                 },
                 {
@@ -108,9 +108,9 @@ export default{
 
                     I was fully responsible for the projects progress, from design to delivery.
                     
-                    This experience was both challenging and formative. It allowed me to strengthen my autonomy, technical versatility and gain confidence in my ability to learn fast, adapt and deliver concrete results. 
+                    🏆 This experience was both challenging and formative. It allowed me to strengthen my autonomy, technical versatility and gain confidence in my ability to learn fast, adapt and deliver concrete results. 
                     
-                    As part of my work-study program (alternance) with Studi, my schedule alternates three days in the company and two days at school.`,
+                    🗓️ As part of my work-study program (alternance) with Studi, my schedule alternates three days in the company and two days at school.`,
                     link: "https://www.sinad-emploi.fr/",
                 }
             ],

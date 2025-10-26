@@ -11,11 +11,11 @@
             <h3>Data & Artificial Intelligence Developer</h3>
             <DecoLine/>
         </div>
-        <p>Hi, welcome to my portfolio ! <br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my background and some of my personal projects.<br>Feel free to contact me to learn more !</p>
+        <p>Hi, welcome to my portfolio ! <br><br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my background and some of my personal projects.<br><br>Feel free to contact me to learn more !</p>
         <!-- Boutons mise en contact -->
         <div class="buttons">
-            <button class="curriculum"><a :href="cv" download>Mon CV</a></button>
-            <button class="contact"><a href="#contact">Contact</a></button>
+            <button class="curriculum" title="Download my resume on Linkedin"><a href="https://www.linkedin.com/in/promise-john-93486a2bb/" target="_blank">My Resume</a></button>
+            <button class="contact"><a  href="#contact" >Contact</a></button>
         </div>
     </div>
     <!-- Lune décoration -->
