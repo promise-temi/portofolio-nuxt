@@ -201,6 +201,9 @@ section{
     margin-right: 20px;
     text-align: start;
 } 
+.particles {
+    display: none;
+  }
 }
 
 @media (min-width: 1440px){
@@ -213,7 +216,9 @@ section{
     display: none;
     
   }
-
+  .particles {
+    display: none;
+  }
 }
 
 </style>
