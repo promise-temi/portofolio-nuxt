@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/icon', '@vueuse/motion/nuxt'],
 
   app: {
-    baseURL: '/portfolio-nuxt',
+    baseURL: '/',
     head: {
       link: [
         {
@@ -17,7 +17,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  nitro:{
-    preset:'github_pages'
-  }
+  build: { transpile : ['inspira-ui']},
+  css: ['inspira-ui/dist/style.css']
 })
