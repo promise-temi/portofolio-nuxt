@@ -17,5 +17,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  
+  build:{
+    transpile: ['motion-v','@vueuse/core']
+  }
 })
