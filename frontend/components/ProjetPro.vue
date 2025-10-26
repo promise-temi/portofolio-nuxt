@@ -8,7 +8,7 @@
         <!-- Partie 1 AI -->
         <div class="partie partie-1">
             <div class="image">
-                <img src="public/drawings/ai_.png" alt="image IA" class="ai">
+                <img src="/drawings/ai_.png" alt="image IA" class="ai">
             </div>
             <div class="texte">
                 <h3>AI : more than an advancement, a true revolution</h3>
@@ -32,13 +32,13 @@
                 </ul>  
             </div>
             <div class="image">
-                <img src="public/drawings/computer_.png" alt="image computer" class="computer">
+                <img src="/drawings/computer_.png" alt="image computer" class="computer">
             </div>
         </div>
         <!-- Partie 3 Ensemble -->
         <div class="partie partie-3">
             <div class="image">
-            <img src="public/drawings/winning_.png" alt="image winning" class="winning">
+            <img src="/drawings/winning_.png" alt="image winning" class="winning">
             </div>
             <div class="texte">
             <h3>Let’s bring your AI projects to life</h3>

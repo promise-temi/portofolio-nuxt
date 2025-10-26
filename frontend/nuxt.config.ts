@@ -17,6 +17,5 @@ export default defineNuxtConfig({
       ],
     },
   },
-  build: { transpile : ['inspira-ui']},
-  css: ['inspira-ui/dist/style.css']
+  
 })

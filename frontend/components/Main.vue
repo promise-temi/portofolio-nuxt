@@ -20,11 +20,11 @@
     </div>
     <!-- Lune décoration -->
     <div class="lune">
-        <img src="public/drawings/Moon.png" alt="lune">
+        <img src="/drawings/Moon.png" alt="lune">
     </div>
 </div>
 <!-- Montagnes décoration -->
-<img src="public/drawings/landscape2.png" alt="montagne" class="montagnes">
+<img src="/drawings/landscape2.png" alt="montagne" class="montagnes">
 </section>
 </template>
 <script>
