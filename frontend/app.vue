@@ -18,7 +18,7 @@
   body {
       background-color: #10071e;
       overflow-x: hidden; /* Empêche le scroll horizontal */
-      max-width: 1440px
+      max-width: 1500px
   }
   html, body {
   overscroll-behavior: none; /* Empêche le over scroll de la page */
