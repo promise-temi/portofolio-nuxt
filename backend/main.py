@@ -28,7 +28,7 @@ app.config.update(
 
 mail = Mail(app)
 
-cors = CORS(app,resources={r"/api/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:3000"]}})
+cors = CORS(app,resources={r"/api/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:3000","https://portfolio-promise-john.onrender.com/"]}})
 
 cAPTCHA = None
 
