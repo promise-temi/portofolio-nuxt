@@ -188,6 +188,7 @@ section{
 
 .particles {
     height: 80vH;
+    display: none;
 }
 
 }
