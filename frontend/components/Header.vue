@@ -10,9 +10,9 @@
         <nav class="desktop">
             <!-- Liste de navigation -->
             <ul class="nav__links">
-                <li><a href="#acceuil">Acceuil</a></li>
+                <li><a href="#acceuil">Home</a></li>
                 <li><a href="#motivations">Motivations</a></li>
-                <li ><a href="#parcours">Parcours</a></li>
+                <li ><a href="#parcours">Background</a></li>
                 <!-- <li><a href="#projets">Projets</a></li> -->
             </ul>
             <!-- Choix de la langue -->

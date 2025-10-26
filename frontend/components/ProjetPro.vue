@@ -11,24 +11,24 @@
                 <img src="public/drawings/ai_.png" alt="image IA" class="ai">
             </div>
             <div class="texte">
-                <h3>L’IA : plus qu’une avancée, une véritable révolution</h3>
-                <p>Au-delà d’une simple prouesse technologique, l’intelligence artificielle (IA) constitue une révolution qui redéfinit nos capacités. Elle permet notamment de :</p>
+                <h3>AI : more than an advancement, a true revolution</h3>
+                <p>Beyond a simple technological achievement, Artificial Intelligence is a true revolution that redefines our capabilities. It makes it possible to :</p>
                 <ul>
-                    <li>Automatiser et optimiser des processus complexes,</li>
-                    <li>Analyser d’immenses volumes de données pour anticiper les tendances,</li>
-                    <li>Concevoir des outils intelligents qui transforment les défis actuels en opportunités durables.</li>
+                    <li>Automate and optimize complex processes,</li>
+                    <li>Analyze vast amounts of data in order to anticipate trends,</li>
+                    <li>Develop intelligent tools that transform current challenges into lasting opportunities.</li>
                 </ul>
             </div>
             <!-- Partie 2 Ma formation -->
         </div>
         <div class="partie partie-2">
             <div class="texte">
-                <h3>Ma formation au service de l’innovation</h3>
-                <p>C’est précisément dans cet univers que je me spécialise actuellement. Je batis un profil à la croisée des compétences, qui combine :</p>
+                <h3>My training serving innovation</h3>
+                <p>It is precisely in this field that I am currently specializing. I am building a profile at the crossroads of complementary skills that combine :</p>
                 <ul>
-                    <li><strong>La science des données</strong> : collecte, nettoyage et exploitation de vastes bases de données.</li>
-                    <li><strong>L’intelligence artificielle</strong> : conception de modèles de Machine Learning et Deep Learning pour résoudre des problématiques complexes.</li>
-                    <li><strong>Le développement d’applications</strong> : intégration de ces solutions dans des outils concrets, déployés en environnement réel.</li>
+                    <li><strong>Data Science</strong> : collecting, cleaning, and exploiting large datasets.</li>
+                    <li><strong>Artificial Intelligence</strong> : training machine learning and deep learning models to solve complex problems.</li>
+                    <li><strong>Application Development</strong> : integrating these solutions into concrete tools deployed in real-world environments.</li>
                 </ul>  
             </div>
             <div class="image">
@@ -41,8 +41,8 @@
             <img src="public/drawings/winning_.png" alt="image winning" class="winning">
             </div>
             <div class="texte">
-            <h3>Ensemble, concrétisons vos projets IA</h3>
-            <p>Ce que je recherche ? Une alternance pour contribuer à des projets ambitieux et aider votre entreprise à exploiter pleinement le potentiel de ses données. Je suis prête à me déplacer où que vous soyez, afin de rejoindre votre équipe et mettre mes compétences au service de vos objectifs. Avec l’IA, les opportunités sont infinies ✨, et j’ai hâte de participer à votre réussite.</p>
+            <h3>Let’s bring your AI projects to life</h3>
+            <p>What am I looking for ? A work-study opportunity (alternance) where I can contribute to ambitious projects and help your company fully harness the potential of its data. I’m ready to relocate, wherever you are, to join your team and put my skills at the service of your goals. With AI, opportunities are endless ✨, and I’m eager to be part of your success.</p>
         </div>
         </div>
     </section>

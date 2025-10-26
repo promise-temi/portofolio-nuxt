@@ -9,6 +9,7 @@
 
 <!-- <Projets></Projets> -->
 <Contact></Contact>
+<Footer></Footer>
 </template>
 <style>
 body{

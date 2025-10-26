@@ -7,10 +7,10 @@
 
         <div class="contact-form">
             <div>
-                <h3>Envie d'en savoir plus ?</h3>
+                <h3>Want to know more ?</h3>
                 <p class="contact-sentence">
-                    Je serais ravie de discuter avec vous ! Que ce soit pour une collaboration ou simplement échanger
-                    <br><br> 👉 N'hésitez pas à me contacter ! Retrouvez-moi aussi sur
+                    I'm always open to new opportunities, collaborations, or simply a good conversation.
+                    <br><br> 👉 Don't hesitate to get in touch or connect with me on 
                     <strong>
                         <a href="https://www.linkedin.com/in/promise-john-93486a2bb/" target="_blank">Linkedin</a>
                     </strong>
@@ -19,17 +19,17 @@
             <form @submit.prevent="sendMessage">
                 <div class="fullname">
                     <fieldset>
-                        <label for="prenom">Prénom</label>
+                        <label for="prenom">First Name</label>
                         <input type="text" id="prenom"  required>
                     </fieldset>
                     <fieldset>
-                        <label for="nom">Nom</label>
+                        <label for="nom">Last Name</label>
                         <input type="text" id="nom"  required>
                     </fieldset>
                     
                 </div>
                 <fieldset>
-                        <label for="objet">objet</label>
+                        <label for="objet">Subject</label>
                         <input type="text" id="object" maxlength="100" required>
                     </fieldset>
                 <fieldset>
@@ -43,16 +43,16 @@
 
                 <!-- CAPTCHA dynamique -->
                 <fieldset>
-                    <label for="captcha">Résolvez ce CAPTCHA : {{x}} {{ challenge }} {{ y }}</label>
+                    <label for="captcha">solve this challenge : {{x}} {{ challenge }} {{ y }}</label>
                     <input type="text" id="captcha"  required>
                 </fieldset>
 
-                <button type="submit" class="submit">Envoyer</button>
+                <button type="submit" class="submit">Send</button>
             </form>
             <Transition name="fade" mode="out-in">
                 <!-- Message de confirmation -->
                 <div v-if="messageValidated" class="confirmation-message">
-                    <p>Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.</p>
+                    <p>Your message has been sent successfully.</p>
                 </div>
             </Transition>
         </div>
@@ -155,6 +155,8 @@ export default{
     background-image: linear-gradient(to right, #660BDA, #C014A6, 50%, #c014a600);
     border: 1px solid #000000;
     border-radius: 5px;
+    position: relative;
+    top: -100px;
 }
 </style>
 

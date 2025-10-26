@@ -8,10 +8,10 @@
     <div class="presentation">
         <div class="titles">
             <h2>Promise JOHN</h2>
-            <h3>Développeuse Data & Intelligence Artificielle</h3>
+            <h3>Data & Intelligence Artificielle Developer</h3>
             <DecoLine/>
         </div>
-        <p>Bonjour et bienvenue sur mon portofolio ! <br>Passionnée par la data et  l'intelligence artificielle, je mets mes compétences au service de projets innovants et ambitieux. Ici, vous découvrirez ma vision de l'IA, mon parcours et mes projets. <br>N'hésitez pas à me contacter pour échanger !</p>
+        <p>Hi, welcome to my portfolio ! <br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my background and some of my personal projects.<br>Feel free to contact me to learn more !</p>
         <!-- Boutons mise en contact -->
         <div class="buttons">
             <button class="curriculum"><a :href="cv" download>Mon CV</a></button>
