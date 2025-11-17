@@ -78,5 +78,3 @@ def send_message():
     else:
         return jsonify({"message":"Une erreur est survenue"}), 500
 
-
-app.run(debug = True)

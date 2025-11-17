@@ -58,11 +58,11 @@ export default{
                     description: `A professional training program combining theory and practice, with seven intensive months in class followed by twelve months in a work-study program (alternance). 
                     This course has allowed me to develop strong skills across three complementary areas: 
 
-                    ➜ Data Science : Collecting, cleaning and exploring large datasets,
-                    ➜ Artificial Intelligence : Training machine learning and deep learning models to solve complex problems,
-                    ➜ Application Development : Integrating these solutions into concrete tools deployed in real-world environments. 
+                    ➜ Data Science : Learning to design and manage data pipelines: collecting, cleaning, structuring and analyzing datasets for real-world AI use cases,
+                    ➜ Artificial Intelligence : Training and evaluating Machine Learning and Deep Learning models, selecting algorithms, engineering features, and designing predictive systems suited for industrial needs,
+                    ➜ Application Development : Developing web tools/interfaces that expose AI models and deploying them in concrete operational environments. 
 
-                    A comprehensive program that has given me a global understanding of the AI project lifecycle, from raw data to a fully functional tool.`,
+                    🏆 A comprehensive program that has given me a global understanding of the AI project lifecycle, from raw data to a fully functional tool.`,
                     link: "https://gretaformation.ac-orleans-tours.fr/formation/developpeurse-en-intelligence-artificielle-ia",
                 },
                 {
@@ -74,27 +74,44 @@ export default{
 
                     In parallel, I chose to train myself with a more personal and modern stack adapted to my own projects: Vue, Nuxt for the front end, and Python (Flask, FastAPI, Django) for the back end. This personal choice helped me improve my efficiency and, most importantly, enjoy coding. 
 
-                    The online format, with little direct supervision, was a real challenge. It required motivation, organization, and self-discipline to keep progressing. An intense, rewarding, and deeply formative experience.`,
+                    🏆 The online format, with little direct supervision, was a real challenge. It required motivation, organization, and self-discipline to keep progressing. An intense, rewarding, and deeply formative experience.`,
                     link: "https://www.francecompetences.fr/recherche/rncp/31114/",
                 },
+                {
+                    title: "Engineering program - AI Specialization",
+                    institution: "???",
+                    localisation: "France",
+                    duration: "Seeking admission for September 2026",
+                    description: `After building strong foundations in data science, machine learning and applied AI, I am now looking to take my education to the next level.
+                    For September 2026, I am seeking admission into an engineering program or a specialized master’s degree in Artificial Intelligence.
+
+                    What I am looking for is a program that will allow me to:
+                    ➜ Deepen my theoretical foundations of AI;
+                    ➜ Explore AI in multiple fields (industry, robotics, cybersecurity, health, embedded systems…);
+                    ➜ Develop a truly multidisciplinary engineering mindset, beyond pure data science;
+                    ➜ Strengthen my ability to design, deploy and validate end-to-end intelligent systems.
+
+                    I value engineering schools for their generalist approach and their ability to shape versatile, technically mature and industry-ready profiles.
+                    A strong theoretical core followed by an AI specialization is exactly what I am looking for.
+
+                    I am actively exploring programs for 2026, and I am excited to join an environment where I can grow, contribute, and push my expertise in AI even further preferably through a work-study program (alternance), which is my top priority.`,
+                }
             
             ],
             experiences:[
                 // Experiences
                 {
-                    title: "Développeur IA en alternance",
+                    title: "Fullstack AI Developer",
                     institution: "Wabtec",
                     localisation: "Saint-Pierre-Des-Corps ",
                     duration: "aug.2025 - sept.2026",
-                    description: `Working as an AI Developer with Wabtec, a leading American company in the railway industry, on a predictive maintenance project focused on train doors and mobile steps. 
-                    The project combines data science, machine learning, and software development, with a strong focus on time-series analysis to detect patterns and anticipate potential faults. 
-
-                    It includes data preprocessing, feature engineering, clustering, and model training, as well as the development of an interface and the deployment of models in production environments. 
+                    description: `Currently working as an AI Developer with Wabtec, a leading American company in the railway industry, on a predictive maintenance project focused on train doors and mobile steps. The project involves time-series analysis to detect patterns and anticipate potential faults, combining data preprocessing, feature engineering, clustering, and model training with the development and deployment of web-based tools.
+                    
                     Collaboration with mechanical engineers, R&D engineers and other specialists is key to understanding the operational context and ensuring data quality. 
                     
-                    A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
+                    🏆 A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
                     
-                    As part of my work-study program (alternance) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week of training at school.`,
+                    🗓️ As part of my work-study program (alternance) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
                     link: "https://www.wabteccorp.com/",
                 },
                 {
@@ -108,10 +125,30 @@ export default{
 
                     I was fully responsible for the projects progress, from design to delivery.
                     
-                    This experience was both challenging and formative. It allowed me to strengthen my autonomy, technical versatility andgain confidence in my ability to learn fast, adapt and deliver concrete results. 
+                    🏆 This experience was both challenging and formative. It allowed me to strengthen my autonomy, technical versatility and gain confidence in my ability to learn fast, adapt and deliver concrete results. 
                     
-                    My schedule alternated three days in the company and two days of training with Studi.`,
+                    🗓️ As part of my work-study program (alternance) with Studi, my schedule alternated three days in the company and two days at school.`,
                     link: "https://www.sinad-emploi.fr/",
+                },
+                {
+                    title: "Fullstack AI Engineer",
+                    institution: "???",
+                    localisation: "France",
+                    duration: "Seeking a work-study program (alternance), starting September 2026",
+                    description: `Starting in September 2026, I will be joining an engineering program or a specialized master’s degree in Artificial Intelligence in a work-study format (alternance).
+                    I'm therefore looking for a host company for a duration of 1 to 3 years.
+                    
+                    I'm seeking a company that has a clear vision and strong technological ambition, values innovation, autonomy, and wants to integrate AI deeply into its products, operations or strategy.
+
+                    By 2026, I will already be fully operational as both:
+                    - a web developer (full-stack experience, production-ready interfaces),
+                    - an applied AI developer (ML pipelines, model integration, real-world deployment).
+
+                    This means you can rely on me from day one.
+                    Your teams won’t have to “start from scratch” with me. I will be able to contribute immediately and grow alongside your existing projects.
+                    
+                    My goal is to join an environment where I can contribute from day one, grow alongside ambitious teams, and help accelerate impactful AI initiatives over the next 1 to 3 years. If my vision aligns with yours, I would be excited to contribute, learn, and build long-lasting impact together.`,
+                    link: "#",
                 }
             ],
             selected : null,
@@ -157,7 +194,7 @@ h2{
 
 .section-all{
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     gap: 50px;
 }
 .elements{
