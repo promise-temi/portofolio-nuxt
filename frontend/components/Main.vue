@@ -210,11 +210,15 @@ section{
 div.presentation p{
     text-align: left;
 }
-@media (min-width: 1440px){
+@media (min-width: 1300px){
   div.lune img{
-    margin-top: 4vw;
-  }
+    width: 500px;
+    rotate: -175,45;
+    margin-top: 130px;
+    opacity: 0.9;
 }
+}
+/* 
 @media (min-width: 1900px){
   div.lune img{
     display: none;
@@ -223,6 +227,6 @@ div.presentation p{
   .particles {
     display: none;
   }
-}
+} */
 
 </style>

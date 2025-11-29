@@ -200,9 +200,9 @@ div.partie-2 .texte{
     }
 }
 
-@media (min-width:1300px){
+/* @media (min-width:1300px){
   section{
     padding: 50px 130px;
   }
-}
+} */
 </style>

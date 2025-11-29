@@ -370,9 +370,9 @@ h4 svg {
 
 }
 
-@media (min-width:1300px){
+/* @media (min-width:1300px){
   section{
     padding: 50px 130px;
   }
-}
+} */
 </style>

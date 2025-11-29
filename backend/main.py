@@ -16,6 +16,7 @@ app = Flask(__name__)
 MAIL_USERNAME = os.getenv('MAIL_USERNAME')          
 MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')          
 MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER') or MAIL_USERNAME
+ENV_ORIGINS = os.getenv('ENV_ORIGINS')
 
 app.config.update(
     MAIL_SERVER='smtp.gmail.com',
@@ -28,7 +29,7 @@ app.config.update(
 
 mail = Mail(app)
 
-cors = CORS(app,resources={r"/api/*": {"origins": ["http://localhost:3000", "http://127.0.0.1:3000","https://portfolio-promise-john.onrender.com"]}})
+cors = CORS(app,resources={r"/api/*": {"origins": ENV_ORIGINS}})
 
 cAPTCHA = None
 
@@ -78,3 +79,6 @@ def send_message():
     else:
         return jsonify({"message":"Une erreur est survenue"}), 500
 
+
+if __name__ == "__main__": 
+    app.run(host="0.0.0.0", port=8000, debug=True)

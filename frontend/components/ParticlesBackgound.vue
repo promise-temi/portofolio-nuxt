@@ -164,10 +164,10 @@ div[ref="canvasContainerRef"] {
   }
 }
 
-@media (min-width: 1900px){
+/* @media (min-width: 1900px){
   div{
     display: none;
   }
-}
+} */
 
 </style>

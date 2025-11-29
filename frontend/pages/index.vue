@@ -7,7 +7,7 @@
 <Parcours></Parcours>
 <ParcourMobile/>
 
-<!-- <Projets></Projets> -->
+<Projets></Projets>
 <Contact></Contact>
 <Footer></Footer>
 </template>

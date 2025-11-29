@@ -49,6 +49,7 @@ header {
     position: sticky;
     z-index: 1000;
     width: 100%;
+    
 }
 
 /* Logo */

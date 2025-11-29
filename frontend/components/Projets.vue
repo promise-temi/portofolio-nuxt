@@ -6,10 +6,9 @@
             </div>
         <div class="projects__section">
             <div class="project__cards">
-                <Card title="Prédition du nutriscore d'un produit alimentaire" description="Description du projet 1" image="drawings/predict_nutriscore.png" link="#"/>
-                <Card title="Prédition de la classification nova d'un produit alimentaire" description="Description du projet 2" image="drawings/predict_nova.png" link="#"/>
-                <Card title="Ingrédiants d'un produit alimentaire à partir d'une photo" description="Description du projet 3" image="drawings/ocr_ingrediants.png" link="#"/>
-                <Card title="Valeurs nutritonnelles d'un produit alimentaire à partir d'une photo" description="Description du projet 4" image="drawings/ocr_nutri_values.png" link="#"/>
+                <Card title="Nutrition Score Prediction Pipeline" description="" image="drawings/predict_nutriscore.png" link="#"/>
+                <Card title="NLP Spam Detection Model" description="" image="drawings/predict_nova.png" link="#"/>
+                <Card title="Real Estate Price Prediction Model" description="" image="drawings/ocr_ingrediants.png" link="#"/>
             </div>
         </div>
     </Section>
