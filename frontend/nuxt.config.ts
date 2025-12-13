@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/icon', '@vueuse/motion/nuxt'],
 
   app: {
-    baseURL: '/',
+    baseURL: '/portofolio-nuxt/',
     head: {
       link: [
         {
