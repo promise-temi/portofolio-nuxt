@@ -1,7 +1,7 @@
 <template>
     <footer>
         <p>© 2025 Promise JOHN</p>
-        <p>Designed and developed from scratch with Nuxt & Flask</p>
+        <p>Designed and developed from scratch with Nuxt</p>
     </footer>
 </template>
 

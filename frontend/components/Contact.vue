@@ -19,7 +19,7 @@
             <form @submit.prevent="sendMessage">
                 <div class="fullname">
                     <fieldset>
-                        <label for="prenom">First Name</label>
+                        <label for="prenom">Name</label>
                         <input type="text" id="prenom"  required>
                     </fieldset>
                     <fieldset>
@@ -32,27 +32,27 @@
                         <label for="objet">Subject</label>
                         <input type="text" id="object" maxlength="100" required>
                     </fieldset>
-                <fieldset>
+                <!-- <fieldset>
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
-                </fieldset>
+                </fieldset> -->
                 <fieldset>
                     <label for="message">Message</label>
                     <textarea id="message" maxlength="1000" required></textarea>
                 </fieldset>
 
                 <!-- CAPTCHA dynamique -->
-                <fieldset>
+                <!-- <fieldset>
                     <label for="captcha">solve this challenge : {{x}} {{ challenge }} {{ y }}</label>
                     <input type="text" id="captcha"  required>
-                </fieldset>
+                </fieldset> -->
 
                 <button type="submit" class="submit">Send</button>
             </form>
             <Transition name="fade" mode="out-in">
                 <!-- Message de confirmation -->
                 <div v-if="messageValidated" class="confirmation-message">
-                    <p>Your message has been sent successfully.</p>
+                    <p>Your email app will open with the message pre-filled. If nothing happens, please refer to my cv for contact details..</p>
                 </div>
             </Transition>
         </div>
@@ -60,76 +60,85 @@
 </template>
 
 <script>
-const api = import.meta.env.VITE_API_BASE_URL
-import axios from 'axios';
+// const api = import.meta.env.VITE_API_BASE_URL
+// import axios from 'axios';
 export default{
     data(){
         return{
-            challenge : null,
-            x : null,
-            y : null,
+            // challenge : null,
+            // x : null,
+            // y : null,
             messageValidated: false,
         }
     },
     methods:{
-        escapeHTML(str) {
-            return String(str).replace(/[&<>"'`]/g, s => ({
-                '&': '&amp;',
-                '<': '&lt;',
-                '>': '&gt;',
-                '"': '&quot;',
-                "'": '&#39;',
-                '`': '&#96;'
-            }[s]));
-            },
+        // escapeHTML(str) {
+        //     return String(str).replace(/[&<>"'`]/g, s => ({
+        //         '&': '&amp;',
+        //         '<': '&lt;',
+        //         '>': '&gt;',
+        //         '"': '&quot;',
+        //         "'": '&#39;',
+        //         '`': '&#96;'
+        //     }[s]));
+        //     },
 
+        // sendMessage(){
+            
+
+        //     let data = {
+        //         'prenom': this.escapeHTML(document.querySelector('#prenom').value),
+        //         'nom': this.escapeHTML(document.querySelector('#nom').value),
+        //         'object': this.escapeHTML(document.querySelector('#object').value),
+        //         'email': this.escapeHTML(document.querySelector('#email').value),
+        //         'message': this.escapeHTML(document.querySelector('#message').value),
+        //         // 'captcha': this.escapeHTML(document.querySelector('#captcha').value)
+        //     }
+
+            
+        //         axios.post(`${api}/send_message`, data)
+        //         .then(response => {
+        //             console.log(response.data)
+        //             document.querySelector('#prenom').value = "";
+        //             document.querySelector('#nom').value = "";
+        //             document.querySelector('#object').value = "";
+        //             document.querySelector('#email').value = "";
+        //             document.querySelector('#message').value = "";
+        //             document.querySelector('#captcha').value = "";
+        //             this.getCaptcha()
+        //             this.showMessage()
+        //         })
+        //         .catch(error => {
+        //             alert('something went wrong');
+        //             console.log(error)
+        //             this.getCaptcha()
+        //         })
+            
+        // },
         sendMessage(){
-            
-
-            let data = {
-                'prenom': this.escapeHTML(document.querySelector('#prenom').value),
-                'nom': this.escapeHTML(document.querySelector('#nom').value),
-                'object': this.escapeHTML(document.querySelector('#object').value),
-                'email': this.escapeHTML(document.querySelector('#email').value),
-                'message': this.escapeHTML(document.querySelector('#message').value),
-                'captcha': this.escapeHTML(document.querySelector('#captcha').value)
-            }
-
-            
-                axios.post(`${api}/send_message`, data)
-                .then(response => {
-                    console.log(response.data)
-                    document.querySelector('#prenom').value = "";
-                    document.querySelector('#nom').value = "";
-                    document.querySelector('#object').value = "";
-                    document.querySelector('#email').value = "";
-                    document.querySelector('#message').value = "";
-                    document.querySelector('#captcha').value = "";
-                    this.getCaptcha()
-                    this.showMessage()
-                })
-                .catch(error => {
-                    alert('something went wrong');
-                    console.log(error)
-                    this.getCaptcha()
-                })
-            
+            const to = "promise.john37170@gmail.com"
+            const subject = `${document.querySelector('#prenom').value} - ${document.querySelector('#nom').value}  :  ${document.querySelector('#object').value}`
+            const body = `${document.querySelector('#message').value}`
+            const MailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            window.location.href = MailtoLink;
+            this.showMessage()
+           
         },
 
-    getCaptcha(){
-      axios.get(`${api}/captcha`)
-      .then(response => {
-          console.log(response.data)
-          let result = response.data
-          this.x = result.x
-          this.y = result.y
-          this.challenge = result.sign
-      })
-      .catch(error => {
-        alert('Une erreur s\'est produite')
-        console.log(error)
-      })
-    },
+    // getCaptcha(){
+    //   axios.get(`${api}/captcha`)
+    //   .then(response => {
+    //       console.log(response.data)
+    //       let result = response.data
+    //       this.x = result.x
+    //       this.y = result.y
+    //       this.challenge = result.sign
+    //   })
+    //   .catch(error => {
+    //     alert('Une erreur s\'est produite')
+    //     console.log(error)
+    //   })
+    // },
 
     showMessage(){
         this.messageValidated = true
@@ -141,7 +150,7 @@ export default{
 
     },
     mounted(){
-        this.getCaptcha()
+        // this.getCaptcha()
     }
     
 }
