@@ -58,9 +58,9 @@ export default{
                     description: `A professional training program combining theory and practice, with seven intensive months in class followed by twelve months in a work-study program (alternance). 
                     This course has allowed me to develop strong skills across three complementary areas: 
 
-                    ➜ Data Science : Learning to design and manage data pipelines: collecting, cleaning, structuring and analyzing datasets for real-world AI use cases,
-                    ➜ Artificial Intelligence : Training and evaluating Machine Learning and Deep Learning models, selecting algorithms, engineering features, and designing predictive systems suited for industrial needs,
-                    ➜ Application Development : Developing web tools/interfaces that expose AI models and deploying them in concrete operational environments. 
+                    ➜ Data Science
+                    ➜ Application Development 
+                    ➜ Aplied AI
 
                     🏆 A comprehensive program that has given me a global understanding of the AI project lifecycle, from raw data to a fully functional tool.`,
                     link: "https://gretaformation.ac-orleans-tours.fr/formation/developpeurse-en-intelligence-artificielle-ia",
@@ -86,10 +86,10 @@ export default{
                     For September 2026, I am seeking admission into an engineering program or a specialized master’s degree in Artificial Intelligence.
 
                     What I am looking for is a program that will allow me to:
-                    ➜ Deepen my theoretical foundations of AI;
-                    ➜ Explore AI in multiple fields (industry, robotics, cybersecurity, health, embedded systems…);
-                    ➜ Develop a truly multidisciplinary engineering mindset, beyond pure data science;
-                    ➜ Strengthen my ability to design, deploy and validate end-to-end intelligent systems.
+                    ➜ Deepen my theoretical foundations of AI
+                    ➜ Explore AI in multiple fields (industry, robotics, cybersecurity, health, embedded systems…)
+                    ➜ Develop a truly multidisciplinary engineering mindset, beyond pure data science
+                    ➜ Strengthen my ability to design, deploy and validate end-to-end intelligent systems
 
                     I value engineering schools for their generalist approach and their ability to shape versatile, technically mature and industry-ready profiles.
                     A strong theoretical core followed by an AI specialization is exactly what I am looking for.
