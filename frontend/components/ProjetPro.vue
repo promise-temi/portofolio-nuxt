@@ -42,7 +42,7 @@
             </div>
             <div class="texte">
             <h3>Let’s bring your AI projects to life</h3>
-            <p>What am I looking for ? A work-study opportunity (alternance) where I can contribute to ambitious projects and help your company fully harness the potential of its data. I’m ready to relocate, wherever you are, to join your team and put my skills at the service of your goals. With AI, opportunities are endless ✨, and I’m eager to be part of your success.</p>
+            <p>What am I looking for ? A work-study opportunity (apprenticeship) where I can contribute to ambitious projects and help your company fully harness the potential of its data. I’m ready to relocate, wherever you are, to join your team and put my skills at the service of your goals. With AI, opportunities are endless ✨, and I’m eager to be part of your success.</p>
         </div>
         </div>
     </section>

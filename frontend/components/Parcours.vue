@@ -57,7 +57,7 @@ export default{
                     institution: "Greta Centre Val de Loire",
                     localisation: "Tours 37100",
                     duration: "nov.2024 - july.2026",
-                    description: `A professional training program combining theory and practice, with seven intensive months in class followed by twelve months in a work-study program (alternance). 
+                    description: `A professional training program combining theory and practice, with seven intensive months in class followed by twelve months in a work-study program (apprenticeship). 
                     This course has allowed me to develop strong skills across three complementary areas: 
 
                     ➜ Data Science
@@ -72,7 +72,7 @@ export default{
                     institution: "Studi",
                     localisation: "Online",
                     duration: "sept.2023 - june.2024",
-                    description: `A 100% online training program with Studi, which allowed me to acquire solid foundations in web development, both on the front-end and back-end sides. The program was combined with work-study period (alternance), giving me the opportunity to apply my skills in real professional contexts on a daily basis. 
+                    description: `A 100% online training program with Studi, which allowed me to acquire solid foundations in web development, both on the front-end and back-end sides. The program was combined with work-study period (apprenticeship), giving me the opportunity to apply my skills in real professional contexts on a daily basis. 
 
                     In parallel, I chose to train myself with a more personal and modern stack adapted to my own projects: Vue, Nuxt for the front end, and Python (Flask, FastAPI, Django) for the back end. This personal choice helped me improve my efficiency and, most importantly, enjoy coding. 
 
@@ -96,7 +96,7 @@ export default{
                     I value engineering schools for their generalist approach and their ability to shape versatile, technically mature and industry-ready profiles.
                     A strong theoretical core followed by an AI specialization is exactly what I am looking for.
 
-                    I am actively exploring programs for 2026, and I am excited to join an environment where I can grow, contribute, and push my expertise in AI even further preferably through a work-study program (alternance), which is my top priority.`,
+                    I am actively exploring programs for 2026, and I am excited to join an environment where I can grow, contribute, and push my expertise in AI even further preferably through a work-study program (apprenticeship), which is my top priority.`,
                 }
             
             ],
@@ -113,7 +113,7 @@ export default{
                     
                     🏆 A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
                     
-                    🗓️ As part of my work-study program (alternance) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
+                    🗓️ As part of my work-study program (apprenticeship) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
                     link: "https://www.wabteccorp.com/",
                 },
                 {
@@ -129,15 +129,15 @@ export default{
                     
                     🏆 This experience was both challenging and formative. It allowed me to strengthen my autonomy, technical versatility and gain confidence in my ability to learn fast, adapt and deliver concrete results. 
                     
-                    🗓️ As part of my work-study program (alternance) with Studi, my schedule alternated three days in the company and two days at school.`,
+                    🗓️ As part of my work-study program (apprenticeship) with Studi, my schedule alternated three days in the company and two days at school.`,
                     link: "https://www.sinad-emploi.fr/",
                 },
                 {
                     title: "Fullstack AI Engineer",
                     institution: "???",
                     localisation: "France",
-                    duration: "Seeking a work-study program (alternance), starting September 2026",
-                    description: `Starting in September 2026, I will be joining an engineering program or a specialized master’s degree in Artificial Intelligence in a work-study format (alternance).
+                    duration: "Seeking a work-study program (apprenticeship), starting September 2026",
+                    description: `Starting in September 2026, I will be joining an engineering program or a specialized master’s degree in Artificial Intelligence in a work-study format (apprenticeship).
                     I'm therefore looking for a host company for a duration of 1 to 3 years.
                     
                     I'm seeking a company that has a clear vision and strong technological ambition, values innovation, autonomy, and wants to integrate AI deeply into its products, operations or strategy.

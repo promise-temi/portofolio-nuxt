@@ -52,7 +52,7 @@
             <Transition name="fade" mode="out-in">
                 <!-- Message de confirmation -->
                 <div v-if="messageValidated" class="confirmation-message">
-                    <p>Your email app will open with the message pre-filled. If nothing happens, please refer to my cv for contact details..</p>
+                    <p>Your email app will open with the message pre-filled.</p>
                 </div>
             </Transition>
         </div>
@@ -116,7 +116,7 @@ export default{
             
         // },
         sendMessage(){
-            const to = "promise.john37170@gmail.com"
+            const to = "temi.promisejohn@gmail.com"
             const subject = `${document.querySelector('#prenom').value} - ${document.querySelector('#nom').value}  :  ${document.querySelector('#object').value}`
             const body = `${document.querySelector('#message').value}`
             const MailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
