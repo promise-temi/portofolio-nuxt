@@ -14,7 +14,7 @@
         <p>Hi, welcome to my portfolio ! <br><br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my academic path, and the professional experiences that shaped it<!--my background and some of my personal projects-->.<br><br>Feel free to contact me to learn more !</p>
         <!-- Boutons mise en contact -->
         <div class="buttons">
-            <button class="curriculum" title="Download my resume on Linkedin"><a href="https://www.linkedin.com/in/promise-john-93486a2bb/" target="_blank">LinkedIn</a></button>
+            <button class="curriculum" title="Download my resume o"><a href="/Promise-John.pdf" download>My Resume</a></button>
             <button class="contact"><a  href="#contact" >Contact</a></button>
         </div>
     </div>

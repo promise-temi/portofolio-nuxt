@@ -147,7 +147,7 @@ export default{
                     This means you can rely on me from day one.
                     Your teams won’t have to “start from scratch” with me. I will be able to contribute immediately and grow alongside your existing projects.
                     
-                    My goal is to join an environment where I can contribute from day one, grow alongside ambitious teams, and help accelerate impactful AI initiatives over the next 1 to 3 years. If my vision aligns with yours, I would be excited to contribute, learn, and build long-lasting impact together.`,
+                    If my vision aligns with yours, I would be excited to contribute, learn, and build long-lasting impact together.`,
                     link: "#",
                 }
             ],
