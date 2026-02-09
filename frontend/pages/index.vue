@@ -6,7 +6,6 @@
 <ProjetPro></ProjetPro>
 <Parcours></Parcours>
 <ParcourMobile/>
-
 <!-- <Projets></Projets> -->
 <Contact></Contact>
 <Footer></Footer>
