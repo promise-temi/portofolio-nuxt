@@ -11,7 +11,7 @@
             <h3>Data & Artificial Intelligence Developer</h3>
             <DecoLine/>
         </div>
-        <p>Hi, welcome to my portfolio ! <br><br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my academic path, and the professional experiences that shaped it<!--my background and some of my personal projects-->.<br><br>Feel free to contact me to learn more !</p>
+        <p>Hi, welcome to my portfolio ! <br><br>Passionate about data and artificial intelligence, I aim to turn innovative ideas into meaningful projects. Explore my vision of AI, my academic path, and the professional experiences that shaped my skill set<!--my background and some of my personal projects-->.<br><br>Feel free to contact me to learn more !</p>
         <!-- Boutons mise en contact -->
         <div class="buttons">
             <button class="curriculum" title="Download my resume o"><a href="Promise-John.pdf" download>My Resume</a></button>

@@ -68,7 +68,7 @@ export default{
                     link: "https://gretaformation.ac-orleans-tours.fr/formation/developpeurse-en-intelligence-artificielle-ia",
                 },
                 {
-                    title: "Full-Stack Web Developer",
+                    title: "Fullstack Web Developer",
                     institution: "Studi",
                     localisation: "Online",
                     duration: "sept.2023 - june.2024",
@@ -80,11 +80,11 @@ export default{
                     link: "https://www.francecompetences.fr/recherche/rncp/31114/",
                 },
                 {
-                    title: "Engineering program - AI Specialization",
+                    title: "Master degree / Engineering program - AI Specialization",
                     institution: "???",
                     localisation: "France",
                     duration: "Seeking admission for September 2026",
-                    description: `After building strong foundations in data science, machine learning and applied AI, I am now looking to take my education to the next level.
+                    description: `After building strong foundations in data science and applied AI, I am now looking to take my education to the next level.
                     For September 2026, I am seeking admission into an engineering program or a specialized master’s degree in Artificial Intelligence.
 
                     What I am looking for is a program that will allow me to:
@@ -93,25 +93,26 @@ export default{
                     ➜ Develop a truly multidisciplinary engineering mindset, beyond pure data science
                     ➜ Strengthen my ability to design, deploy and validate end-to-end intelligent systems
 
-                    I value engineering schools for their generalist approach and their ability to shape versatile, technically mature and industry-ready profiles.
-                    A strong theoretical core followed by an AI specialization is exactly what I am looking for.
-
-                    I am actively exploring programs for 2026, and I am excited to join an environment where I can grow, contribute, and push my expertise in AI even further preferably through a work-study program (apprenticeship), which is my top priority.`,
+                    I am actively exploring programs for 2026, and I am excited to join an environment where I can grow, contribute, and push my expertise in AI even further preferably through a work-study program (apprenticeship), which is my top priority.
+                    
+                    PS: I have received a conditional offer from ESILV (École Supérieure d’Ingénieurs Léonard de Vinci), located in La Défense, Paris, for the Master in Computer Science & Data Science. I will be fully admitted once I secure an apprenticeship. This program aligns strongly with my academic goals and professional ambitions.`,
                 }
             
             ],
             experiences:[
                 // Experiences
                 {
-                    title: "Fullstack AI Developer",
+                    title: "Data & AI Developer",
                     institution: "Wabtec",
                     localisation: "Saint-Pierre-Des-Corps ",
                     duration: "aug.2025 - sept.2026",
-                    description: `Currently working as an AI Developer with Wabtec, a leading American company in the railway industry, on a predictive maintenance project focused on train doors and mobile steps. The project involves time-series analysis to detect patterns and anticipate potential faults, combining data preprocessing, feature engineering, clustering, and model training with the development and deployment of web-based tools.
+                    description: `I'm currently working as a Data & AI Developer with Wabtec, a leading American company in the railway industry, on a predictive maintenance project focused on train doors and mobile steps. 
+                    
+                    Until now, the project required me to implement time‑series analysis, feature engineering, clustering and model training with the development of secure, production‑ready web tools. This includes full‑stack development (front‑end and back‑end), HTTPS‑secured deployment and application monitoring.
                     
                     Collaboration with mechanical engineers, R&D engineers and other specialists is key to understanding the operational context and ensuring data quality. 
                     
-                    🏆 A challenging and meaningful project that allows me to apply advanced methods, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
+                    🏆 A challenging and meaningful project that allows me to apply advanced methods, leverage a truly multidisciplinary skill set, strengthen my technical expertise, and contribute to the use of AI in a high-impact industrial context.
                     
                     🗓️ As part of my work-study program (apprenticeship) with Greta Centre Val de Loire, my schedule alternates three weeks in the company and one week  at school.`,
                     link: "https://www.wabteccorp.com/",
@@ -133,7 +134,7 @@ export default{
                     link: "https://www.sinad-emploi.fr/",
                 },
                 {
-                    title: "Fullstack AI Engineer",
+                    title: "Data & AI Engineer",
                     institution: "???",
                     localisation: "France",
                     duration: "Seeking a work-study program (apprenticeship), starting September 2026",
@@ -268,10 +269,19 @@ div.experiences-et-titre{
     
 }
 
+
 .formation span, .experience span{
     font-size: 12px;
     color: #c014a6;
     
+}
+
+.formation h6{
+    font-size: 11px;
+}
+
+.experience h6{
+    font-size: 11px;
 }
 
 .informations-part{
@@ -285,7 +295,7 @@ div.experiences-et-titre{
     font-weight: 600;
 }
 .informations-part .title h6{
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
 }
 .informations-part p{

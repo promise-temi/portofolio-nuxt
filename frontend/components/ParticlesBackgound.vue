@@ -158,11 +158,11 @@ div[ref="canvasContainerRef"] {
   height: 100%;
 }
 
-@media (max-width: 480px){
+/* @media (max-width: 480px){
   div{
     display: none;
   }
-}
+} */
 
 /* @media (min-width: 1900px){
   div{
