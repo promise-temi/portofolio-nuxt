@@ -16,9 +16,9 @@
                 <!-- <li><a href="#projets">Projets</a></li> -->
             </ul>
             <!-- Choix de la langue -->
-            <div v-if="false" class="language__choice" title="Changer la Langue" @click="language = !language">
-                <Icon name="flag:bl-4x3" v-if="!language" />
-                <Icon name="flag:sh-4x3" v-if="language" />
+            <div v-if="true" class="language__choice" title="Changer la Langue" @click="language = !language">
+                <Icon name="flag:bl-4x3" v-show="language" />
+                <Icon name="flag:sh-4x3" v-show="!language" />
             </div>
             <!-- Bouton de contact -->
             <button onclick="window.location.href ='#contact'">Contact</button>
