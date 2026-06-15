@@ -1,0 +1,45 @@
+<template>
+    <Section id="projets">
+            <div class="title">
+                <h2>Projets</h2>
+                <DecoLine/>
+            </div>
+        <div class="projects__section">
+            <div class="project__cards">
+                <Card title="Nutrition Score Prediction Pipeline" description="" image="drawings/predict_nutriscore.png" link="#"/>
+                <Card title="NLP Spam Detection Model" description="" image="drawings/predict_nova.png" link="#"/>
+                <Card title="Real Estate Price Prediction Model" description="" image="drawings/ocr_ingrediants.png" link="#"/>
+            </div>
+        </div>
+    </Section>
+</template>
+<style scoped>
+section{
+    position: relative;
+    z-index: 5;
+    padding: 50px;
+
+}
+h2{
+    position: relative;
+    z-index: 5;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+}
+div.projects__section{
+   margin: 50px 0;
+    display: grid;
+  place-items: center;
+
+}
+.project__cards {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start; /* ← aligne à gauche */
+  gap: 30px;
+  max-width: 1000px;
+}
+</style>
